@@ -12,11 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FApiRestInternetApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
+class FApiRestInternetTest {
 
 	/**
 	 * Test to check if isWebUp() method works
