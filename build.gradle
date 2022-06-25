@@ -13,7 +13,7 @@ dependencies {
 
 group = 'com.flikendo'
 version = '1.0'
-sourceCompatibility = 1.8
+sourceCompatibility = 17
 
 repositories {
 	mavenCentral()
@@ -21,7 +21,7 @@ repositories {
 
 jar {
 	archiveClassifier = '' //use empty string
-}aaa
+}
 
 publishing {
 	publications {
@@ -29,4 +29,8 @@ publishing {
 			from components.java
 		}
 	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
 }
